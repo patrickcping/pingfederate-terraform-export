@@ -1,0 +1,6 @@
+# {RESOURCE_DESCRIPTION} - {API_NAME} ({API_RAWID})
+import {
+    to = {RESOURCE_NAME}.{API_RESOURCE_FORMATTED_ID}
+    id = "{API_RAWID}"
+}
+

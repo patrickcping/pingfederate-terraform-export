@@ -1,0 +1,22 @@
+[
+    {
+        "providerResourceDescription": "IDP Adapter",
+        "providerResource": "pingfederate_idp_adapter",
+        "jqExpression": ".operations[] | select(.resourceType == \"/idp/adapters\").items"
+    },
+    {
+        "providerResourceDescription": "SP Connection",
+        "providerResource": "pingfederate_idp_sp_connection",
+        "jqExpression": ".operations[] | select(.resourceType == \"/idp/spConnections\").items"
+    },
+    {
+        "providerResourceDescription": "Authentication Policy Contract",
+        "providerResource": "pingfederate_authentication_policy_contract",
+        "jqExpression": ".operations[] | select(.resourceType == \"/authenticationPolicyContracts\").items"
+    },
+    {
+        "providerResourceDescription": "Password Credential Validator",
+        "providerResource": "pingfederate_password_credential_validator",
+        "jqExpression": ".operations[] | select(.resourceType == \"/passwordCredentialValidators\").items"
+    }
+]

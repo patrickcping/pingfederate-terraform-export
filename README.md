@@ -61,13 +61,17 @@ cd $PF_TF_EXPORT/scripts
 ./generate_import_blocks.sh
 ```
 
+The file will have generated `$PF_TF_EXPORT/terraform/import.tf`.
+
 Use Terraform to generate HCL from the `import {}` blocks:
 ```shell
 cd $PF_TF_EXPORT/terraform
 terraform plan -generate-config-out=generated.tf
 ```
 
-Errors will be observed, but the HCL will have been generated in the `generated.tf` file.
+The HCL will have been generated in the `$PF_TF_EXPORT/terraform/generated.tf` file and can be modified as needed.
+
+**A number of errors will be observed because the generated HCL has not been generated cleanly.  There are limitations of the Terraform HCL generation routine as well as in the provider.**
 
 **Manual work is required to clean and re-format the HCL as needed.**
 
